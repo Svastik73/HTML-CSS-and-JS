@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+ <html>
+ <head><title></title>
+   
+   <style>
+        body{
+             background-color: beige;
+             text-align: center;
+        }
+    #ans{
+       background-color:yellowgreen;
+           }
+
+   </style>
+   </head>
+
+<body >
+     <form>
+     Enter the First number : <input id="fir"><br>
+     Enter the Second number: <input id="sec"><br>
+   <button onclick="sum()">Add</button>
+   <input id="ans">
+   <br>
+   <button onclick="mult()" style="color:blueviolet;">Multiply</button>
+   <input id="ans1">
+<br>
+<button onclick="div()">Divide</button>
+<input id="ans2">
+<br>
+<button onclick="subt()">Subtract</button>
+<input id="ans3">
+<br><br>
+
+</form>
+<button type="button" onclick="myChange(),5000"> CHANGE COLOR </button>
+
+<p id="read">
+MY COLOR
+</p>
+
+<script >
+     function myChange(){
+          document.getElementById("read").style.color = "#ff0000";
+     
+     }
+    function sum(){
+          let x,y,c;
+     x=document.getElementById("fir").value;
+     y=document.getElementById("sec").value;
+     c=parseInt(x)+parseInt(y);
+
+
+     document.getElementById("ans").value=c;
+          }
+     
+     function mult(){
+          let a,b,c;
+          a=Number(document.getElementById("fir").value);
+          b=Number(document.getElementById("sec").value);
+
+          c=a*b;
+          document.getElementById("ans1").value=c;
+           }
+     function div(){
+          let a,b,c;
+          a=Number(document.getElementById("fir").value);
+          b=Number(document.getElementById("sec").value);
+          c=a/b;
+          document.getElementById("ans2").value=c;
+           }
+     function subt(){
+          let a,b,c;
+          a=document.getElementById("fir").value;
+          b=document.getElementById("sec").value;
+          c=a-b;
+          document.getElementById("ans3").value=c;
+           }
+           function cube(){
+          let a,b,c;
+          a=document.getElementById("fir").value;
+          b=document.getElementById("sec").value;
+          c=a*b;
+          document.getElementById("ans1").value=c;
+           }
+     
+     
+     
+     
+          </script>
+</body>
+</html>
