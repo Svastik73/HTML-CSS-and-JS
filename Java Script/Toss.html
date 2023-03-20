@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Coin flipping !
+    </title>
+<style>
+
+.glow {
+  font-size: 20px;
+  color:white;
+  text-align: center;  
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #b8d815, 0 0 40px #1e48b2, 0 0 50px #c46c08, 0 0 60px #299b09, 0 0 70px #03c140;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4de1, 0 0 40px #720483, 0 0 50px #621350, 0 0 60px #9e3390, 0 0 70px #8b0682, 0 0 80px #ae2986;
+  }
+}
+    </style>
+    <head>
+<body style="background-color:black">
+    <h1 style="text-align:center; font-size: xx-large;" class="glow">Toss</h1>
+    <div class="maino"
+        style="border-style: solid; border-width: 2px; border-radius: 2px; font-size: x-large; background-color:beige">
+        <p>
+        <div >
+            <p style="text-align: center; border-style: solid; margin-left: 400px; margin-right: 400px; padding-top: 50px; padding-bottom: 50px; ">
+                 Toss a coin and count the frequency ::
+                <img src="https://w7.pngwing.com/pngs/47/715/png-transparent-gold-coin-royal-australian-mint-silver-coin-gold-coin-head-gold.png" border="12px" id="head" style="border-color:#299b09;height:100px; width:100px">
+                <img src="https://www.nicepng.com/png/full/146-1464848_quarter-tail-png-tails-on-a-coin.png" border="12px" id="tail" style="border-color:#b8d815;width:100px;height:100px">
+            </p>
+        </div>
+        <pre><center><button type=" button" onclick="toss()" style="text-align: centre; font-size:medium">Toss coin
+                </pre>
+
+                </button></center>
+                <pre><center><button onclick="window.location.reload()" style="text-align: centre; font-size:medium">Reset
+                </pre>
+
+                </button></center>
+                </pre>
+            </p>
+        </div>
+        <center>
+            <table border="2px" style="border-color:#9e3390;  color:#fff;border-style:ridge; border-width: 10px; border-collapse: collapse; width: 50%; height: 50%; font-size :medium ;text-align:center">
+                <tr>
+                    <td>Face</td>
+                    <td>Frequency</td>
+                    <td>Percentage</td>
+                </tr>
+                <tr>
+                    <th>H</th>
+                    <th id="t1">0</th>
+                    <th id="h1">0</th>
+                </tr>
+                <tr>
+                    <th>T</th>
+                    <th id="t2">0</th>
+                    <th id="h2">0</th>
+                </tr>
+            </table>
+        </center>
+        <script>
+            var t = 0;
+            var h = 0;
+            function toss() {
+                let x = Math.floor((Math.random() * 100) + 1);
+                if (x % 2 == 0) {
+                    t++;
+                    document.getElementById("tail").style.borderColor = "green";
+                    document.getElementById("head").style.borderColor = "blue";
+
+                }
+                else {
+                    h++;
+                    document.getElementById("tail").style.borderColor = "red";
+                    document.getElementById("head").style.borderColor = "yellow";
+
+                }
+                document.getElementById("t1").innerHTML = t;
+                document.getElementById("t2").innerHTML = h;
+                document.getElementById("h1").innerHTML = 100 * t / (h + t);
+                document.getElementById("h2").innerHTML = 100 * h / (t + h);
+            }
+        </script>
+</body>
+
+</html>
