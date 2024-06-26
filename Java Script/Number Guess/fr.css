@@ -1,0 +1,52 @@
+.nava{
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    color: azure;
+    text-shadow: 0 0 10px rgba(206, 34, 34, 0.8),
+                 0 0 20px rgba(194, 24, 24, 0.6),
+                 0 0 30px rgba(176, 29, 29, 0.4),
+                 0 0 40px rgba(255, 255, 255, 0.2);
+}
+
+body{
+    width: 100%;
+    position: relative;
+    background-color: rgb(28, 26, 26);
+    font-family: 'poppins', sans-serif;
+}
+
+input.guess{
+    border: none;
+    font-family: fantasy;
+    font-weight: lighter;
+    font-size: larger;
+    padding-left: 15px;
+    border-radius: 7px;
+    height: 40px;
+}
+input.guess:focus {
+    outline: none; /* This ensures the outline is not shown on focus */
+    padding-left: 15px;
+    font-family: fantasy;
+    font-weight: lighter;
+    font-size: larger;
+}
+.check{
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 10px;
+    width: 60px;
+border: none;
+    background-color: aliceblue;
+  font-family: 'Poppins';
+    height: 32px;
+}
+.jik{align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#ans{
+  color: aliceblue;
+}
