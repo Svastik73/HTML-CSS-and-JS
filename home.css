@@ -29,6 +29,7 @@ body{
     padding: 10px 10px;
     background: #fff;
     z-index: 9;
+    margin-bottom:10px;
 }
 .links-container{
     display: flex;
